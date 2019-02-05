@@ -184,10 +184,10 @@ function resizePhotos() {
     var images = document.getElementsByTagName("img");
     for(let i = 0; i < images.length; i++){
         
-        images[i].style.transform ="500ms ease-in-out"
+        images[i].style.transform ="3s ease-in-out"
         images[i].addEventListener("mouseover", function() {
          
-          images[i].style.transform= "scale(1.5)";
+          images[i].style.transform= "scale(1.2)";
          
         })
        images[i].addEventListener("mouseout", function() {
