@@ -1,0 +1,23 @@
+function calculateTax(salary, type) {
+    var tax = 0;
+    var overtax = 0;
+    if (type === "Craftsman") {
+        tax =  0.05;
+        overtax = 0.1;
+    } else {
+        tax = 0.11;
+        overtax = 0.18;
+    }
+
+    var net = 0;
+    if (salary <= 1000) {
+        net = 1000 * tax;
+    } else {
+        var ostatok = net - 1000;
+        net = ostatok * overtax + 1000 * tax;
+    }
+
+    return net;
+}
+
+var result = calculateTax(1450, "Craftsman");
