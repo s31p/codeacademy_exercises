@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <script>
+       
+    
+    if ($(window).width() < 700 || $(window).height() < 480) {
+    //small screen, load other JS files
+    $.getScript('faceNoteMobile.js', function () {
+        //the script has been added to the DOM, you can now use it's code
+        
+
+
+    });
+}
+else
+{  $.getScript('faceNoteBook.js', function () {
+        //the script has been added to the DOM, you can now use it's code
+    });
+
+}
+</script>
+</body>
+</html>
