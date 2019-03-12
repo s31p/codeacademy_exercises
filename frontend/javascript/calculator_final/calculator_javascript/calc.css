@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+.contentContainer {
+
+    width: 90%;
+height: 330px;
+margin: 0 auto;
+border-radius: 0 0 5px 5px;
+background-color: #937f6b;
+border: 3px inset;
+border-color: #2b2117 #54412f #54412f #2b2117;
+display: grid;
+grid-template-columns: repeat(4, 25%);
+grid-template-rows: repeat(5, 19.75%);
+    grid-gap: 1px;
+   
+    margin: 0 auto;
+}
+
+
+#display {
+    overflow: hidden;
+}
+div.btnlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    
+    border: 2px solid black;
+   
+}
+.btnlinks:nth-child(1) {
+	grid-column: 1/3;
+	
+}
+.btnlinks:nth-child(16) {
+	grid-column: 1/3;
+	
+}
+
