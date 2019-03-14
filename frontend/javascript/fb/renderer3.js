@@ -141,22 +141,30 @@ function Renderer(person) {
           //   myDivs[i].appendChild(imgs2);
           myDivs[i].addEventListener("click", function () {
             var el = document.getElementById("galeryPopUp");
+            
+let deleteX2 = document.getElementById("deleteX");
+let btnR2 = document.getElementById("right");
+let btnL2 = document.getElementById("left");
             if (el != null) {
               el.innerHTML = "";
             }
+            if( deleteX2 || btnL2 || btnR2){
+              deleteX2.remove() || btnL2.remove() || btnR2.remove();
+            }
             popUpGallery(event.target);
+           
            
           }, false);
           //  console.log( myDivs[i].src = this.user.photos.url2[9] + "PPPPPPPPP");
           //  document.getElementById("galeryPopUp").reset();
-
+   
 
 
 
         }
       }
       this.photoDivs();
-
+      
 
 
     }  //album1Container  
@@ -267,20 +275,24 @@ function Renderer(person) {
     
   //  galleryCont.pseudoStyle('after', 'content', '"deletePopUp2"');
 galleryContMain.appendChild(deletePopUp2);
+
+
+
   deletePopUp.addEventListener("click", function(){
 //console.log(event.target);
-var el = document.getElementById("galeryPopUp");
-var deleteX = document.getElementById("deleteX");
-var btnR = document.getElementById("right");
-var btnL = document.getElementById("left");
-            if (el != null) {
-              el.innerHTML = "";
+let el = document.getElementById("galeryPopUp");
+let deleteX = document.getElementById("deleteX");
+let btnR = document.getElementById("right");
+let btnL = document.getElementById("left");
+           // if (el != null) {
+           //   el.innerHTML = "";
              el.remove();
              btnR.remove();
              btnL.remove();
              deleteX.remove();
-             
-            }  
+             deletePopUp.remove();
+           
+           // }  
 //event.target.offsetParent.remove();
             
   });
