@@ -94,7 +94,7 @@ function Renderer(person) {
           myDivs[i].style.borderRadius = "40px";
           myDivs[i].style.border = "1px solid grey";
           myDivs[i].style.objectFit = "cover";
-//fragment.appendChild(myDivs[i]);
+
 
 
           //   myDivs[i].appendChild(imgs2);
@@ -121,7 +121,7 @@ let btnL2 = document.getElementById("left");
 
 
         }
-        photosContainer.appendChild(fragment);
+      
         
       }
       this.photoDivs();
