@@ -70,72 +70,31 @@ function Renderer(person) {
       photosContainer.style.alignContent = "space-between";
       photosContainer.style.justifyContent = "space-between";
       picContainer.appendChild(photosContainer);
-      //for (var i = 0; i < this.user.photos.url2.length; i++) {
-
-      //}
-      var div1 = document.createElement("img");
-      div1.setAttribute("class", "box");
-      div1.src = this.user.photos.url2[0];
-      photosContainer.appendChild(div1);
-
-      var div2 = document.createElement("img");
-      div2.setAttribute("class", "box");
-      div2.src = this.user.photos.url2[1];
-      photosContainer.appendChild(div2);
-
-      var div3 = document.createElement("img");
-      div3.setAttribute("class", "box");
-      div3.src = this.user.photos.url2[2];
-      photosContainer.appendChild(div3);
-
-      var div4 = document.createElement("img");
-      div4.setAttribute("class", "box");
-      div4.src = this.user.photos.url2[3];
-      photosContainer.appendChild(div4);
-
-      var div5 = document.createElement("img");
-      div5.setAttribute("class", "box");
-      div5.src = this.user.photos.url2[4];
-      photosContainer.appendChild(div5);
-
-      var div6 = document.createElement("img");
-      div6.setAttribute("class", "box");
-      div6.src = this.user.photos.url2[5];
-      photosContainer.appendChild(div6);
-
-      var div7 = document.createElement("img");
-      div7.setAttribute("class", "box");
-      div7.src = this.user.photos.url2[6];
-      photosContainer.appendChild(div7);
-
-      var div8 = document.createElement("img");
-      div8.setAttribute("class", "box");
-      div8.src = this.user.photos.url2[7];
-      photosContainer.appendChild(div8);
-
-      var div9 = document.createElement("img");
-      div9.setAttribute("class", "box");
-      div9.src = this.user.photos.url2[8];
-      photosContainer.appendChild(div9);
-
-      var div10 = document.createElement("img");
-      div10.setAttribute("class", "box");
-      div10.src = this.user.photos.url2[9];
-      photosContainer.appendChild(div10);
-      console.log(div10);
+      
+      const fragment = document.createDocumentFragment();
+      for (let indx = 0; indx < this.user.photos.url2.length; indx++) {
+       const myDivs2 = document.createElement("img");
+       myDivs2.setAttribute("class", "box");
+       myDivs2.src = this.user.photos.url2[indx];
+       fragment.appendChild(myDivs2);
+      }
+      photosContainer.appendChild(fragment);
+      
       this.photoDivs = function () {
 
 
         var myDivs = document.getElementsByClassName("box");
+        
         countertmp = 0;
+        
         for (var i = 0; i < myDivs.length; i++) {
-
+         
           myDivs[i].style.width = "17%";
           myDivs[i].style.height = "45%";
           myDivs[i].style.borderRadius = "40px";
           myDivs[i].style.border = "1px solid grey";
           myDivs[i].style.objectFit = "cover";
-
+//fragment.appendChild(myDivs[i]);
 
 
           //   myDivs[i].appendChild(imgs2);
@@ -162,6 +121,8 @@ let btnL2 = document.getElementById("left");
 
 
         }
+        photosContainer.appendChild(fragment);
+        
       }
       this.photoDivs();
       
