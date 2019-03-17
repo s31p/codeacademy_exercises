@@ -21,6 +21,7 @@ headerRow.style.fontSize = "20px";
     headerRow.appendChild(headerCol);
   });*/
   //table.appendChild(headerRow);
+  //test
   players.forEach(player => {
     let row = document.createElement("tr");
     Object.keys(player).forEach(key => {
