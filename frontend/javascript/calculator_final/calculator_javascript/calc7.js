@@ -5,13 +5,137 @@ this.dispVal = newRend.displayContainer;
 this.dispVal.innerHTML = "0";
 this.dispVal.style.textAlign = "end";
 this.dispVal.style.lineHeight= "150px";
-//'-moz-block-height';
-
-
+'-moz-block-height';
 this.display = "0";
 this.newArr = [];
 var that = this;
 this.pendingval;
+var rez;
+var tmpoperator;
+var test;
+
+document.onkeypress = function (e) {
+    
+    e = e || window.event;
+    // use e.keyCode
+    console.log(e)
+    
+   
+   if(dispVal.innerHTML=="0"){
+    dispVal.innerHTML=" ";
+    
+}
+display += e.key;
+   console.log(display, "beginning");
+    dispVal.innerHTML = display;
+    if(e.key=="+"){
+        tmpoperator = "+";
+       
+     display += dispVal.innerHTML;
+        newArr.push(parseFloat(display));
+        rez = parseFloat(newArr.reduce(add));
+        console.log(rez, "rez");
+        dispVal.innerHTML = rez;
+        rez = parseFloat(dispVal.innerHTML);
+        console.log(rez, "second");
+        console.log(result2, "result2*")
+        
+        display = "";
+        
+
+    } else if(e.key=="*"){
+        tmpoperator = "*";
+       
+     display += dispVal.innerHTML;
+        newArr.push(parseFloat(display));
+        rez = parseFloat(newArr.reduce(multiply));
+        console.log(rez, "rez");
+        dispVal.innerHTML = rez;
+        rez = parseFloat(dispVal.innerHTML);
+        console.log(rez, "second");
+        console.log(result2, "result2*")
+        
+        display = "";
+        
+
+    } else if(e.key=="/"){
+        tmpoperator = "/";
+       
+     display += dispVal.innerHTML;
+        newArr.push(parseFloat(display));
+        rez = parseFloat(newArr.reduce(divide));
+        console.log(rez, "rez");
+        dispVal.innerHTML = rez;
+        rez = parseFloat(dispVal.innerHTML);
+        console.log(rez, "second");
+        console.log(result2, "result2*")
+        
+        display = "";
+        
+
+    } else if(e.key=="-"){
+        tmpoperator = "-";
+       
+     display += dispVal.innerHTML;
+        newArr.push(parseFloat(display));
+        rez = parseFloat(newArr.reduce(subtract));
+        console.log(rez, "rez");
+        dispVal.innerHTML = rez;
+        rez = parseFloat(dispVal.innerHTML);
+        console.log(rez, "second");
+        console.log(result2, "result2*")
+        
+        display = "";
+        
+
+    }
+    if(e.key == "Enter"){
+        if(tmpoperator == "+"){
+            test = rez + parseFloat(display);
+    console.log(test, "test");
+            console.log(test, "test=")
+            dispVal.innerHTML=parseFloat(test);
+display = test;
+            test = "";
+            newArr =[];
+           
+    }else if(tmpoperator == "*"){
+        test = rez * parseFloat(display);
+console.log(test, "test");
+        console.log(test, "test=")
+        dispVal.innerHTML=parseFloat(test);
+display = test;
+        test = "";
+        newArr =[];
+       
+}else if(tmpoperator == "/"){
+    test = rez / parseFloat(display);
+console.log(test, "test");
+    console.log(test, "test=")
+    dispVal.innerHTML=parseFloat(test);
+display = test;
+    test = "";
+    newArr =[];
+   
+} else if(tmpoperator == "-"){
+    test = rez - parseFloat(display);
+console.log(test, "test");
+    console.log(test, "test=")
+    dispVal.innerHTML=parseFloat(test);
+display = test;
+    test = "";
+    newArr =[];
+   
+}
+}
+
+    
+};
+
+// this.display = "0";
+// this.newArr = [];
+// var that = this;
+// this.pendingval;
 
 this.clearBtn = newRend.btn1;
 this.clearBtn.style.color = "red";
@@ -66,21 +190,23 @@ this.divide = function (a, b) {
 this.equals = newRend.btn18;
 
 
-var rez;
-var tmpoperator;
+// var rez;
+// var tmpoperator;
 var result;
 var result2;
 var result3;
   
 function performOperation(event2) {
-   
+//    if(event2=="+")
+//    this.operator2=event2
+//    else
     this.operator2 = event2.target.innerHTML;
     switch (this.operator2) {
         case "+":
      
         
         tmpoperator = "+";
-        console.log(parseFloat(display));
+        console.log('plus operacija',parseFloat(display));
         //if(display != ""){
            display = dispVal.innerHTML;
                 newArr.push(parseFloat(display));
@@ -159,7 +285,7 @@ break;
 
 
 case "=":
-var test;
+// var test;
 console.log(rez,display)
 if(tmpoperator=="+") {
     test = rez + parseFloat(display);
@@ -197,7 +323,7 @@ newArr =[];
 
 break;
 
-default:
+default: 
 break;
     }
 //return display;
