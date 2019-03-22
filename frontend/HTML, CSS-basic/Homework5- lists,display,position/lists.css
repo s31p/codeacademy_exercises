@@ -1,0 +1,176 @@
+.logo {
+    height: 40px;
+}
+img{
+    float: left;
+}
+nav {
+    float: right;
+    
+}
+.list li a.link {
+    text-decoration: none;
+    color:#2d2d2d;
+    font-size: 15px;
+	position: relative;
+}
+.list {
+    list-style-type: none;
+    text-decoration: none;
+   
+}
+
+.list2 {
+	display: none;
+	position: absolute;
+	list-style-type: none;
+	text-decoration: none;
+}
+.list2 a{
+	text-decoration: none;
+}
+li.link:hover .list2 {   /* za na hover da iskaca podlista*/
+    display: block;  /* position: absolute; */
+	display: flex;
+    flex-direction: column; 
+	list-style-type: none;
+	color: black;
+	/* display block i position absolute za istiot efekt*/	
+}
+li.link:hover .list2 a{  
+	text-decoration: none;
+	color: black;
+}
+.body-wrap {
+	margin: 0 auto; /* 0 gi selektirame vrednostite gore i dole auto deka istite komandi gi davame od dvete strani, istiot prostor se dodava segde*/
+	width: 1000px;
+	height: auto; /*ne ja ogranichuvame visinata */
+}
+.slider img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	object-position: bottom;
+	margin-bottom: 30px;
+}
+.widget {
+	margin-bottom: 30px;
+}
+.widget .part {
+	width: calc(100%/2 - 10px);
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.part img {
+	height: 240px;
+	float: unset;
+}
+.logo-wrap {
+	position: absolute;
+	background-color: #fff;
+   box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+   border-radius: 1px;
+   border: 1px solid #eaeef1;
+   width: 100px;
+   height: 100px;
+   bottom: 1px;
+   left: 20px;
+   
+}
+.content-wrap {
+	height: 40px;
+	padding: 10px 20px 0 140px;
+}
+.logo-wrap img {
+	width: 90%;
+	height: auto;
+}
+.widget .part.part1 {
+	margin-left: 20px;
+}
+.widget .part a {
+	text-decoration: none;
+}
+.widget2 {
+	position: relative;
+	margin: 0 auto 30px;
+	clear: both;
+	width: 50%;
+}
+div {
+	display: block;
+	
+}
+.slika1 {
+	position: relative;
+}
+.slika2 {
+	width: 20%;
+	position: absolute;
+    right: 100px;
+    bottom: -240px;
+    height: 70px;
+    padding: 5px;
+    background-color: white;
+	float: left;
+}
+.widget3 {
+	width: 60%; /* 60% od celiot sajt*/
+	margin: 0% auto 30px;
+	position: relative;
+}	
+.slika3 {
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+.slika4 {
+	position: absolute;
+	right: 290px;
+    bottom: -540px;
+    height: 70px;
+    padding: 5px;
+    background-color: white;
+	
+}
+header {
+	position: fixed;
+	height: 45px;
+	width: 1000px;
+	z-index: 1;
+	background-color: #fff;
+	top:0;
+}
+.toTop {
+	position: sticky;
+	width: 30px;
+	height: 30px;
+	bottom: 30px;
+	left: 30px;
+	background-color: #fff;
+	border: 1px solid #dedede; /* kaj mene ne funkcionira toTop kopceto*/
+}
+a:-webkit-any-link {
+	color: -webkit-link;
+	cursor: pointer;
+	text-decoration: underline;
+}
+	
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+	

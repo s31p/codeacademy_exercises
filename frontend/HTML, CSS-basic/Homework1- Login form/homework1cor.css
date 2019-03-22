@@ -1,0 +1,151 @@
+html, body {
+	height: 100%;
+            margin: 0;
+			background: black;
+        }
+
+        
+
+
+#main {
+margin-top: 150px;
+margin-left: 350px;
+background: #e3efeb;
+height: 350px;
+width: 600px;
+}
+#first {
+	background: #e3efeb;
+	text-align: left;
+	padding-top: 10px; 
+    padding-bottom: 1px;
+    padding-left: 10px;
+	font-size: 18px; 
+	font-family: verdana;
+	color: darkblue;
+}
+#second {
+	background: #e3efeb;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 10px;
+	font-size: 10px;
+	font-family: verdana;
+	color: grey;
+}
+#third {
+	background: #e3efeb;
+	margin-top:25px;
+	margin-left: 20px;
+	height: 240px;
+	width: 560px;
+}
+#fourth {
+	background: #e3efeb;
+	height: 240px;
+	width: 270px;
+}
+#fifth {
+	background: #0b1247;
+	height: 240px;
+	width: 270px;
+	float: right;
+	margin-top: -240px;
+}
+#a {
+	background: #e3efeb;
+	color: grey;
+	height: 1em;
+	width: 105px;
+	font-size: 12px;
+	font-family: verdana;
+	text-align: left;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	padding-top: 10px;
+}
+#b {
+	background: #e3efeb;
+	color: darkblue;
+	height: 1em;
+	width: 150px;
+	margin-top: -23px;
+	margin-right: 14px;
+	font-size: 12px;
+	font-family: verdana;
+	text-align: left;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	padding-top: 10px;
+}
+ul {
+	list-style: none;
+	margin-top: 5px;
+	 
+}
+button {
+	line-height: 1.8em;
+	width: 55%;
+	background: #d7e4f7;
+	color: #243366;
+	border: 2px solid #243366; 
+}
+#Sign {
+	border: 2px solid #a37b1d;
+	color: white;
+	background: #0b1247; 
+}
+.c {
+	display: flex;
+  justify-content: center;
+  display: inline-block;
+  
+}
+#d {
+	background: #0b1247;
+	color: white;
+	height: 1em;
+	width: 256px;
+	font-size: 12px;
+	font-family: verdana;
+	text-align: left;
+	padding-left: 14px;
+	padding-bottom: 1px;
+	padding-top: 10px;
+}
+.e {
+	display: flex;
+  justify-content: center;
+  display: inline-block;
+  
+}
+#f {
+margin-top: 15px;
+}	
+.g {
+	color: white;
+	font-size: 13px;
+
+}
+#i {
+	float: right;
+	cursor: pointer;
+	font-family: verdana;
+	font-size: 10px;
+	color: white;
+}
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+

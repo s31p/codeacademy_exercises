@@ -1,0 +1,53 @@
+html, body {
+height: 100%;
+            margin: 0;
+			background-image: repeating-linear-gradient(#b9d3f7, #556e91 10%, #f2f4f7 20%);
+			   font-family: verdana;
+}
+
+#main {
+height: 400px; 
+width: 800px;
+background: white;
+}	
+
+#first {
+	background: white;
+	height: 400px;
+	width: 280px;
+	
+	
+}
+#second {
+	background: white;
+	height: 400px;
+	width: 520px;
+	float: right;
+	margin-top: -400px;
+}
+td {
+	border-bottom: 1px solid #adadad;
+	border-collapse: collapse;
+	text-align: left;
+	padding-top: 18px;
+	
+}
+th {
+	text-align: left;
+	padding-top: 16px;
+}
+button {
+	cursor: pointer;
+}
+button:hover {
+	opacity: 0.5;
+}
+.model:hover{
+	opacity: 0.5;
+}
+	
+
+
+
+
+
