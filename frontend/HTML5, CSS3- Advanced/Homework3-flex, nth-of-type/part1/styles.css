@@ -1,0 +1,95 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    line-height: 2;
+    background: #093f75;
+    color: #fff;
+}
+ 
+
+div {
+    flex: 1;
+    max-width: 32%;
+}
+/*two ul~ol {
+	color: red;
+}
+.two ul.a {
+	color: green;
+}*/
+/** {
+	color: pink;
+} so zvezdicka znachi sekoj element kje bide so dadenite vrednosti*/
+/*div.name-of-class bez prazno mesto, ovaa klasa kje ja barame samo klasata vo natre vo prviot element, ako ostavime prazno mesto najdi gi site div elementi i vo site div elementi baraj tip so klasa two */
+
+div span {
+    font-family: 'Oswald', sans-serif;
+}
+
+.one li:nth-child(odd) {
+	background-color: #b0c4de;
+	color: #093f75;
+}
+.one li:nth-child(even) {
+	color: #39deea;
+}
+/*.two ol li:nth-of-type(2) {
+	background-color: #b0c4de;
+	color: #093f75;
+}
+.two ol li:nth-of-type(3) {
+	background-color: #b0c4de;
+	color: #093f75;
+}*/
+.two ol li:nth-of-type(2) {
+	background-color: #b0c4de;
+	color: #093f75;
+} 
+.two ol li:nth-of-type(3) {
+	background-color: #b0c4de;
+	color: #093f75;
+}
+/*.two ol li:nth-of-type(n+2):not(:nth-of-type(4)) {
+	background-color: #b0c4de;
+	color: #093f75;
+}*/ 
+/*.two li:nth-of-type(4n+3):not(ul:nth-child(3)) {
+	background-color: #b0c4de;
+	color: red;
+ } */
+ /*.two li:nth-of-type(4n+2) {
+	background-color: #b0c4de;
+	color: red;
+ }*/
+ 
+ 
+ /*.three ul li:nth-of-type(3n+2) {
+	 background-color: #b0c4de;
+	 color:  #093f75;
+ }*/
+/*Istoto mozhe i so nth-child*/ 
+ /*.three ul li:nth-child(3n+2) {
+	 background-color: #b0c4de;
+	 color:  #093f75;
+ }*/ 
+ .three li:nth-child(odd):nth-child(2n+3) {
+	 background-color: #b0c4de;
+	 color:  #093f75;
+ }
+ 
+ 
+
+
+	

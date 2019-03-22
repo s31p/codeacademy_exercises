@@ -1,0 +1,35 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+span {
+    font-family: 'Oswald', sans-serif;
+}
+
+.widget {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 550px;
+    /*width: 50%;*/
+    margin: 50px 0 0;
+	margin: 0;
+    padding: 0;
+}
+
+.widget-part {
+   /* width: calc(25% - 10px);*/
+    min-height: 100px;
+	width: 50%;
+    margin-bottom: 10px; 
+    background-color: blanchedalmond;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+.widget-part:nth-child(1n+6) {
+	margin-left: 10px;;
+}
