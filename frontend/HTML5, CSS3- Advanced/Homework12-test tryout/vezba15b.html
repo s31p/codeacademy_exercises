@@ -1,0 +1,280 @@
+<head>
+    <title>Code Academy developers</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="vezba15b.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</head>
+<header>
+<nav>
+<div class="list">
+
+<a href="#" class="list-item"><img src="partner-logo.svg" style= "vertical-align: -14"/></a> 
+<a href="#" class="list-item">discount codes & deals </a>
+<a href="#" class="list-item"> top 20</a>
+<a href="#" class="list-item3"> top stories</a>
+<a href="#" class="list-item4"> </a>
+</div> <!--list-->
+<div class="input">
+<input type="text" placeholder="Search"> </input> 
+
+
+<img src="lupa.png" id="lupa"/>
+</div>
+
+</nav>
+</header>
+
+<body>
+<div class="body-wrap">
+<div class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem id ullam, esse, placeat minus mollitia repellat consequatur ipsum doloremque officiis exercitationem molestias quod animi nobis quos totam cupiditate. </div>
+</br>
+<div class="gallery-wrap">
+<button onclick="plusDivs(-1)"> <img src="arrow-left.png" /> </button>
+ <img src="slider-img.jpg" class="slider-img" />
+<img src="unsplash1.jpg" class="slider-img" style="height: 343px; object-fit: cover;"/>
+<img src="unsplash2.jpg" class="slider-img" style="height: 343px; object-fit: cover;" />
+<img src="unsplash3.jpg" class="slider-img" style="height: 343px; object-fit: cover;" />
+<img src="unsplash4.jpg" class="slider-img" style="height: 343px; object-fit: cover;" />
+<img src="unsplash5.jpg" class="slider-img" style="height: 343px; object-fit: cover;" />
+<img src="unsplash6.jpg" class="slider-img" style="height: 343px; object-fit: cover;" />
+<img src="unsplash7.jpg" class="slider-img" style="height: 343px; object-fit: cover;" />
+<img src="unsplash8.jpg" class="slider-img" style="height: 343px; object-fit: cover;" />
+<img src="unsplash9.jpg" class="slider-img" style="height: 343px; object-fit: cover;" /> 
+ <button onclick="plusDivs(+1)"><img src="arrow-right.png" /></button>
+<img src="logo.png" class="logo" />
+<div class="discount"> Up to 50% off selected items </div>
+</div> <!--gallery-wrap-->
+</br> </br> 
+<div class="dots">
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+<div class="dot" id="dot"> </div>
+</div> <!--dots-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slider-img");
+  var dots = document.getElementsByClassName("dot");
+ if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} 
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  x[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+//setTimeout(showSlides, 2000);  Change image every 2 seconds  
+}
+</script>
+</br>
+<div class="title1"> Save everyday with these CNN exclusive coupons and promo codes </div> </br> </br>
+<div class="flexVouchers">
+<div class="wrap"><div class="logo3"><img src="logo.png" /> </div> <div class="vouchers">29 Vouchers </div> </div>
+<div class="wrap"><div class="logo3"><img src="logo.png" /> </div> <div class="vouchers">29 Vouchers </div> </div>
+<div class="wrap"><div class="logo3"><img src="logo.png" /> </div> <div class="vouchers">29 Vouchers </div> </div>
+<div class="wrap"><div class="logo3"><img src="logo.png" /> </div> <div class="vouchers">29 Vouchers </div> </div>
+<div class="wrap"><div class="logo3"><img src="logo.png" /> </div> <div class="vouchers">29 Vouchers </div> </div>
+<div class="wrap"><div class="logo3"><img src="logo.png" /> </div> <div class="vouchers">29 Vouchers </div> </div>
+
+</div> <!--flexVouchers-->
+</br> </br>
+<div class="title2"> All the best deals, all in one place</div>
+</br> </br>
+<div class="column-count">
+ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem id ullam, esse, placeat minus mollitia repellat consequatur ipsum doloremque officiis exercitationem molestias quod animi nobis quos totam cupiditate. (edited)
+- tekstot ne mora da go pisuvate istiot kako na slikata, ne mi e biten tekstot bitno mi e kakov layout ke napravite na celata stranica i na elementite oddelno
+
+-  istoto vazi i za ikonite/slikite, kade sto ima slika so ne sum vi ja pratila slobodno zamenete ja so druga ikona/slika
+
+- obrnete vnimanie na header-ot i footer-ot deka se so bela pozadina od kraj do kraj na stranicata no elementite vo niv se vo ist wrap so ostatokot od stranicata
+
+- za elementot so e samo so tekst koj e podelen vo dve koloni, toa mozete da go napravite bez flex so koristenje na column-count 2, column-width i column-gap orem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem id ullam, esse, placeat minus mollitia repellat consequatur ipsum doloremque officiis exercitationem molestias quod animi nobis quos totam cupiditate. (edited)
+- tekstot ne mora da go pisuvate istiot kako na slikata, ne mi e biten tekstot bitno mi e kakov layout ke napravite na celata stranica i na elementite oddelno
+
+-  istoto vazi i za ikonite/slikite, kade sto ima slika so ne sum vi ja pratila slobodno zamenete ja so druga ikona/slika
+
+- obrnete vnimanie na header-ot i footer-ot deka se so bela pozadina od kraj do kraj na stranicata no elementite vo niv se vo ist wrap so ostatokot od stranicata
+
+- za elementot so e samo so tekst koj e podelen vo dve koloni, toa mozete da go napravite bez flex so koristenje na column-count 2, column-width i column-gap 
+</div>
+</br> </br>
+<div class="bestCoupons"> best coupons </div>
+<div class="shopTopOffers">Shop our top offers for today</div>
+</br>
+<div class="gridOffers">
+<div class="grid-item"><div class="grid-img"> <img src="logo.png" /> </div>
+<div class="grid-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem </br>
+<a href="#">Browse all Target coupons </a> 
+</div> 
+</div>
+<div class="grid-item"><div class="grid-img"> <img src="logo.png" /> </div>
+<div class="grid-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem </br>
+<a href="#">Browse all Target coupons </a> 
+</div>  </div>
+<div class="grid-item"><div class="grid-img"> <img src="logo.png" /> </div>
+<div class="grid-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem </br>
+<a href="#">Browse all Target coupons </a> 
+</div>  </div>
+<div class="grid-item"><div class="grid-img"> <img src="logo.png" /> </div>
+<div class="grid-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem </br>
+<a href="#">Browse all Target coupons </a> 
+</div>  </div>
+<div class="grid-item"><div class="grid-img"> <img src="logo.png" /> </div>
+<div class="grid-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem </br>
+<a href="#">Browse all Target coupons </a> 
+</div>  </div>
+<div class="grid-item"><div class="grid-img"> <img src="logo.png" /> </div>
+<div class="grid-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem </br>
+<a href="#">Browse all Target coupons </a> 
+</div>  </div>
+</div> <!--gridOffers-->
+</br> </br>
+<div class="browseCategories"> browse categories </div>
+</br> 
+<div class="categories"> 
+<div> Fashion & Accessories</div>
+<div> Electronics & Phones</div>
+<div>Home & Garden </div>
+<div>Travel & Holidays </div>
+<div> Shoes & Bags</div>
+
+</div> <!--categories-->
+
+<!--<div class="grid2">
+<div class="grid-item2"><div class="flex4-img"> <img src="logo.png" /></div> 
+ </div>
+<div class="grid-item2"> <div class="flex4-list" style="height: auto; content-wrap: wrap;"> <div>
+<ul>
+<li><a href="#"> Code</a></li>
+<li>Use this Gymshark promo code and get 20% off Header Tee</li>
+<li> Expires tomorrow</li>
+</ul>
+</div> </div> </div>
+<div class="grid-item2"> <div class="button"><button class="button1"> SEE CODE </button></div> </div>
+<div class="grid-item2"> </div>
+<div class="grid-item2"> </div>
+</div>
+-->
+<div class="widget-logos">
+            <ul class="list5">
+                <li class="list-item5">
+                    <a>
+                        <div class="list-item-logo">
+                            <img src="logo.png">
+                        </div> 
+                        <div class="list-item-content">
+                            <span class="list-item-name"><a href="#code">Code </a></span></br>
+                            <div class="list-item-tags">
+                                <span class="list-item-tag">Use this Gymshark promo code and get 20% off Header Tee</span></br>
+                                <span class="list-item-tag">Expires tomorrow</span>
+								
+                            </div>
+                        </div>
+                    
+					<div class="button"><button class="button1"> SEE CODE </button></div>
+					</a>
+                </li>
+                <li class="list-item5">
+                    <a>
+                        <div class="list-item-logo">
+                            <img src="logo.png">
+                        </div>
+                        <div class="list-item-content">
+                            <span class="list-item-name"><a href="#deal">Deal </a></span></br>
+                            <div class="list-item-tags">
+                                <span class="list-item-tag">Use this Gymshark promo code and get 20% off</span>
+                                
+                            </div>
+                        </div>
+						<div class="button"><button class="button2"> SEE CODE </button></div>
+                    </a>
+                </li>
+                <li class="list-item5">
+                    <a>
+                        <div class="list-item-logo">
+                            <img src="logo.png">
+                        </div>
+                        <div class="list-item-content">
+                            <span class="list-item-name"><a href="#deal">Deal </a></span></br>
+                            <div class="list-item-tags">
+                                <span class="list-item-tag">Use this Gymshark promo code and get 20% off</span></br>
+                                <span class="list-item-tag">Editor's choice</span>
+                            </div>
+                        </div>
+						<div class="button"><button class="button2"> SEE CODE </button></div>
+                    </a>
+                </li>
+                <li class="list-item5">
+                    <a>
+                        <div class="list-item-logo">
+                            <img src="logo.png">
+                        </div>
+                        <div class="list-item-content">
+                            <span class="list-item-name"><a href="#deal">Deal </a></span></br>
+                            <div class="list-item-tags">
+                                <span class="list-item-tag">Use this Gymshark promo code and get 20% off</span></br>
+                                <span class="list-item-tag">New offer just added</span>
+                            </div>
+                        </div>
+						<div class="button"><button class="button2"> SEE CODE </button></div>
+                    </a>
+                </li>
+                <li class="list-item5">
+                    <a>
+                        <div class="list-item-logo">
+                            <img src="logo.png">
+                        </div>
+                        <div class="list-item-content">
+                            <span class="list-item-name"><a href="#deal">Deal </a></span></br>
+                            <div class="list-item-tags">
+                            
+                                <span class="list-item-tag">Use this Gymshark promo code and get 20% off</span>
+                            </div>
+                        </div>
+						<div class="button"><button class="button2"> SEE CODE </button></div>
+                    </a>
+                </li>
+				</ul>
+				</div>
+</div> <!--body-wrap-->
+
+</br> </br> </br>
+</body> 
+<footer>
+<nav>
+<div class="footerText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nihil rem id ullam, esse, placeat minus mollitia repellat consequatur ipsum esse, placeat minus mollitia equatur ipsum doloremque officiis exercitationem 
+</div>
+<div class="about">
+<div class="aboutUs">
+<a href="#"> About us</a>
+<a href="#"> Contact us </a>
+<a href="#"> Terms of service </a>
+</div>
+
+</div>
+</nav>
+</footer>
+
+</html>
+

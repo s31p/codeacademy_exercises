@@ -1,0 +1,46 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    line-height: 2;
+    background: #093f75;
+    color: #fff;
+}
+
+.two li {
+    color: unset;
+}
+
+div {
+    flex: 1;
+    max-width: 32%;
+}
+.two ol:nth-of-type(2) {
+    color: red;
+}
+.two ol:first-of-type {
+    color: rgb(161, 18, 119);
+}
+.two ol:last-of-type {
+    color: rgb(66, 32, 56);
+}
+/*.three ul li:nth-of-type(odd) {
+    color: red;
+}
+.three ul li:nth-of-type(even) {
+    color: palevioletred;
+}*/
+.three ul:nth-of-type(odd) li {
+    color: red;
+}

@@ -1,0 +1,68 @@
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(10, 100px);
+	grid-gap: 15px;
+	margin: 0 auto;
+	width: 70%;
+	grid-template-areas:
+	"class1 class2 class3 class4"
+	"class1 class2 class3 class4"
+	"class6 class2 class3 class4"
+	"class6 class2 class8 class4"
+	"class6 class7 class8 class4"
+	"class6 class7 class8 class4"
+	"class5 class7 class8 class4"
+	"class5 class10 class8 class9"
+	"class5 class10 class8 class9";
+}
+
+.grid div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ad9f8e;
+	color: #f2dfc6;
+	font-weight: bold;
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+}
+.class1 {
+	grid-area: class1;
+}
+.class2 {
+	grid-area: class2;
+}
+.class3 {
+	grid-area: class3;
+}
+.class4 {
+	grid-area: class4;
+}
+.class5 {
+	grid-area: class5;
+}
+.class6 {
+	grid-area: class6;
+}
+.class7 {
+	grid-area: class7;
+}
+.class8 {
+	grid-area: class8;
+}
+.class9 {
+	grid-area: class9;
+}
+.class10 {
+	grid-area: class10;
+}
+
+
+
+
+
+
+
+
+
